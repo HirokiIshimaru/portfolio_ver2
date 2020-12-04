@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "common";
+
+// widthが1441pxを超えた時
+@media screen and (min-width:1441px){
+    .about__box{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/about_pc_wide.jpg);
+    }
+    .work__box__right{
+        width: 40%;
+    }
+}

@@ -1,0 +1,101 @@
+- var thisPage = "index";
+- var res_thisPage = "res_index";
+
+doctype html
+html(lang="ja")
+    head
+        include _head
+        link(rel="stylesheet", href="css/stalker.css")
+    body
+        //- ヘッダー
+        header.head#top
+            nav.nav
+                ul.nav__box
+                    li
+                        a(href="#top") Top
+                    li
+                        a(href="#about") About
+                    li
+                        a(href="#work") Works
+                    li
+                        a(href="#contact") Contact
+            .head__content
+                p Portfolio
+                h1 HIROKI ISHIMARU
+                p 田舎の農業高校からWebエンジニアへ
+        
+        //- スクロールナビ用
+        nav.navScroll#scroll_nav
+            ul.nav__box
+                li
+                    a(href="#top") Top
+                li
+                    a(href="#about") About
+                li
+                    a(href="#work") Work
+                li
+                    a(href="#contact") Contact
+        
+        //- メイン
+        main
+            .about
+                .about__title#about
+                    h2 About
+                .about__box
+                    .about__box__content
+                        .about__box__content__leftBox
+                            p.my_img
+                                img(src="img/about_myimg.jpg", alt="")
+                        .about__box__content__rightBox
+                            h2 HIROKI ISHIMARU
+                            p ECCコンピュータ専門学校 Webデザインコース 22年卒
+                            p
+                                | 農業とドラムの知識を持った
+                                br
+                                | フロントエンドエンジニア志望
+                            .history
+                                h3 History
+                                p
+                                    | 何かと農業についての調べ授業が多かった高校時代
+                                    br
+                                    | 様々なwebサイトを見て、
+                                    br
+                                    | いつの間にかwebサイトを作りたいと思い初め
+                                    br
+                                    | 農業を捨て、web業界へ
+                                    br
+                                    | p.s.
+                                    br
+                                    | 小学校からドラムを初め、高校の文化祭でライブ経験有
+            .work
+                .work__title#work
+                    h2 Works
+                .work__box
+                    .work__box__left#displayYearlist
+                        .work__box__left__title
+                            h3#title 1年
+                        .work__box__left__menu
+                            .work__box__left__menu__border
+                                .work__box__left__menu__border__select#moveBorder
+                            ul.work__box__left__menu__yearList
+                                li.btn
+                                    input#year01.yearButton(type="button" value="1年" onclick="clickBtn()")
+                                li.btn
+                                    input#year02.yearButton(type="button" value="2年" onclick="clickBtn()")
+                                li.btn
+                                    input#year03.yearButton(type="button" value="3年" onclick="clickBtn()")
+                    .work__box__right
+                        include _year01
+                        include _year02
+                        include _year03
+            .contact
+                .contact__title#contact
+                    h2 Contact
+                    p お気軽にご連絡ください。お待ちしております。
+                .contact__addresBox
+                    .contact__addresBox__borderTop
+                    a(href="mailto:hirokiishimaru6132@gmail.com") hirokiishimaru6132@gmail.com
+                    .contact__addresBox__borderBottom
+        footer
+            p.copyright &copy; 2020 hirokishimaru
+    include _foot

@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import "detail";
+@import "res_detail";  
+
+$img_path: "../img/";
+.main__link{
+    background-image: url($img_path + "lookclothe_detail.png");
+}

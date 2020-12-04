@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="ここに説明文を設定">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitteraccount">
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="サイトタイトル">
+    <meta property="og:description" content="サイト説明文">
+    <meta property="og:url" content="https://www.hogehoge.com">
+    <meta property="og:image" content="https://www.hogehoge.com./hoge.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+    <link rel="stylesheet" href="css/ress.css">
+    <title>portfolio - index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/res_index.css">
+    <link rel="stylesheet" href="css/undefined.css">
+    <link rel="stylesheet" href="css/stalker.css">
+  </head>
+  <body>
+    <header class="head" id="top">
+      <nav class="nav">
+        <ul class="nav__box">
+          <li><a href="#top">Top</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="head__content">
+        <p>Portfolio</p>
+        <h1>HIROKI ISHIMARU</h1>
+        <p>田舎の農業高校からWebエンジニアへ</p>
+      </div>
+    </header>
+    <nav class="navScroll" id="scroll_nav">
+      <ul class="nav__box">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="about">
+        <div class="about__title" id="about">
+          <h2>About</h2>
+        </div>
+        <div class="about__box">
+          <div class="about__box__content">
+            <div class="about__box__content__leftBox">
+              <p class="my_img"><img src="img/about_myimg.jpg" alt=""></p>
+            </div>
+            <div class="about__box__content__rightBox">
+              <h2>HIROKI ISHIMARU</h2>
+              <p>ECCコンピュータ専門学校 Webデザインコース 22年卒</p>
+              <p>農業とドラムの知識を持った<br>フロントエンドエンジニア志望</p>
+              <div class="history">
+                <h3>History</h3>
+                <p>何かと農業についての調べ授業が多かった高校時代<br>様々なwebサイトを見て、<br>いつの間にかwebサイトを作りたいと思い初め<br>農業を捨て、web業界へ<br>p.s.<br>小学校からドラムを初め、高校の文化祭でライブ経験有</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <div class="work__title" id="work">
+          <h2>Works</h2>
+        </div>
+        <div class="work__box">
+          <div class="work__box__left" id="displayYearlist">
+            <div class="work__box__left__title">
+              <h3 id="title">1年</h3>
+            </div>
+            <div class="work__box__left__menu">
+              <div class="work__box__left__menu__border">
+                <div class="work__box__left__menu__border__select" id="moveBorder"></div>
+              </div>
+              <ul class="work__box__left__menu__yearList">
+                <li class="btn">
+                  <input class="yearButton" id="year01" type="button" value="1年" onclick="clickBtn()">
+                </li>
+                <li class="btn">
+                  <input class="yearButton" id="year02" type="button" value="2年" onclick="clickBtn()">
+                </li>
+                <li class="btn">
+                  <input class="yearButton" id="year03" type="button" value="3年" onclick="clickBtn()">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="work__box__right">
+            <div class="work__box__right__content yearContent" id="firstContent">
+              <div class="workList">
+                <div class="workList__content">
+                  <div class="workList__content__img"><img src="img/fisy_pc.png" alt=""></div>
+                  <div class="workList__content__text">
+                    <h3>cafe Fyzi</h3>
+                    <p>木や花の自然に囲まれた<br>自然をコンセプトにしたカフェサイト</p>
+                    <div class="workList__content__text__btn"><a href="fysi_detail.html">詳細へ</a><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/fysi/" target="blank">サイトへ</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="workList">
+                <div class="workList__content">
+                  <div class="workList__content__img"><img src="img/fitness_pc.png" alt=""></div>
+                  <div class="workList__content__text">
+                    <h3>放課後フィットネス</h3>
+                    <p>中高生の健康や自信を伸ばす事に<br>特化したフィットネスサービス</p>
+                    <div class="workList__content__text__btn"><a href="fitnes_detail.html">詳細へ</a><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/afterschool_fitnes/" target="blank">サイトへ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work__box__right__content yearContent">
+              <div class="workList">
+                <div class="workList__content">
+                  <div class="workList__content__img"><img src="img/lookclothe_pc.png" alt=""></div>
+                  <div class="workList__content__text">
+                    <h3>Look Clothe</h3>
+                    <p>月額定額でスタイリスト考案の<br>コーデを一式レンタルサービス</p>
+                    <div class="workList__content__text__btn"><a href="lookclothe_detail.html">詳細へ</a><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/lookclothe_web/" target="blank">サイトへ</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="workList">
+                <div class="workList__content">
+                  <div class="workList__content__img"><img src="img/mama_mb.png" alt=""></div>
+                  <div class="workList__content__text">
+                    <h3>MAMAgement</h3>
+                    <p>冷蔵庫の中にある食材たちを管理し<br>レシピの提案をしてくれるサービス</p>
+                    <div class="workList__content__text__btn"><a href="mama_detail.html">詳細へ</a><a href="http://click.ecc.ac.jp/ecc/hisimaru/works/mamas/" target="blank">サイトへ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work__box__right__content yearContent">
+              <h1>Coming soon・・・</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact__title" id="contact">
+          <h2>Contact</h2>
+          <p>お気軽にご連絡ください。お待ちしております。</p>
+        </div>
+        <div class="contact__addresBox">
+          <div class="contact__addresBox__borderTop"></div><a href="mailto:hirokiishimaru6132@gmail.com">hirokiishimaru6132@gmail.com</a>
+          <div class="contact__addresBox__borderBottom"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">&copy; 2020 hirokishimaru</p>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+  <script src="js/work_content.js"></script>
+</html>
